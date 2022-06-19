@@ -1,0 +1,16 @@
+1. Create a database called findMyRestaurant
+// use findMyRestaurant
+2. Create a collection called restaurants
+// db.restaurants.insertOne({name:"Vitrina",adress:{city:"Tel Aviv-Yafo",street:"Shlomo Ibn Gabirol"}, coordinates:[-77.564,40.677],cuisine:"Burgers",kosher:false,reviews:[{date:"1/11/20",score:7},{date:"2/12/20",score:8},{date:"3/12/9",score:9}]})
+3. inside the collection create at least 5 restaurant documents that include the following:
+    - restaurant name
+    - a sub document called address that includes:
+        - a city
+        - a street
+        - an array of coordinates e.g. [-77,564,40.677]
+    - a type of cuisine
+    - a boolean if it kosher or not
+    - an array of at least 3 reviews that include:
+        - a date
+        - an integer score
+// db.restaurants.insertMany([{name: "Prozdor",adress: { city: "Jerusalem", street: "Mendele Mokher Sfarim" },coordinates: [-97.564, 90.677],cuisine: "Italian",kosher: false,reviews: [{ date: "1/1/20", score: 7 },{ date: "2/2/20", score: 8 },{ date: "3/2/19", score: 9 },]},{name: "Fat Cow",adress: { city: "Haifa", street: "Dizengoff" },coordinates: [-27.564, 20.677],cuisine: "Asian",kosher: false,reviews: [{ date: "1/9/20", score: 7 },{ date: "2/8/20", score: 8 },{ date: "3/7/9", score: 9 },]}])
